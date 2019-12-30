@@ -1,0 +1,3 @@
+create RPM package:
+rpmbuild -ba hello-world.spec
+
