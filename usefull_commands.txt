@@ -1,3 +1,15 @@
 create RPM package:
-rpmbuild -ba hello-world.spec
+  rpmbuild -ba hello-world.spec
 
+Steps to create RPM REPOSITORY:
+  Install repository creator:
+    yum install createrepo
+    
+  Create Repository directory:
+    mkdir /repository1
+    
+  Put RPM file into repo directory:
+    mv /root/rpmbuild/RPMS/x86_64/hello-world-1-1.x86_64.rpm ./
+    
+  add Custom YUM Repository Configuration file to YUM directory:
+    mv ./custom.repo /etc/yum.repos.d/custom.repo
