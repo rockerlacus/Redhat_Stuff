@@ -23,8 +23,8 @@ Steps to create RPM REPOSITORY:
     
   Ha új csomagot (RPM) adsz hozzá a repodhoz (odamásolod), akkor újra kell kreálni a repot és deaktiválni/aktiválni a repo fájlját.
     vi /etc/yum.repos.d/custom.repo
-      /enable
-      átírod enable=0
-      átírod enable=1
+      /enabled
+      átírod enabled=0
+      átírod enabled=1
       
       
