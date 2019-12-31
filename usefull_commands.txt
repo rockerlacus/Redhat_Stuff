@@ -13,3 +13,18 @@ Steps to create RPM REPOSITORY:
     
   add Custom YUM Repository Configuration file to YUM directory:
     mv ./custom.repo /etc/yum.repos.d/custom.repo
+
+  create REPOSITORY:
+    createrepo /repository1
+    
+  Add repository to YUM:
+    yum-config-manager --add-repo /repository1
+    vagy átmásolod a /Redhat_Stuff/custor.repo fájlt a /etc/yum.repos.d/ mappába
+    
+  Ha új csomagot (RPM) adsz hozzá a repodhoz (odamásolod), akkor újra kell kreálni a repot és deaktiválni/aktiválni a repo fájlját.
+    vi /etc/yum.repos.d/custom.repo
+      /enable
+      átírod enable=0
+      átírod enable=1
+      
+      
