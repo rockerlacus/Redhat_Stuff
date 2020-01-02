@@ -4,6 +4,8 @@ create RPM package:
 Steps to create RPM REPOSITORY:
   Install repository creator:
     yum install createrepo
+  install rpmbuild:
+    yum install rpm-build  
     
   Create Repository directory:
     mkdir /repository1
